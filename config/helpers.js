@@ -4,7 +4,8 @@ const bcrypt = require('bcrypt');
 
 let conn = new Mysqli({
     Host: process.env.MYSQL_ADDON_HOST, // IP/domain name 
-    post: process.env.MYSQL_ADDON_PORT, // port, default 3306 
+    post: process.env.MYSQL_ADDON_PORT, // port, default 3306
+    uri: process.env.MYSQL_ADDON_URI
     user: process.env.MYSQL_ADDON_USER, // username
     password: process.env.MYSQL_ADDON_PASSWORD, // password
     db: process.env.MYSQL_ADDON_DB 
